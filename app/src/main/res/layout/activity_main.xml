@@ -54,6 +54,8 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintStart_toEndOf="@id/amazonName"/>
 
+
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="175dp"
@@ -322,6 +324,95 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="175dp"
+            android:id="@+id/row5"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#004C7A"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pharmName1"
+                        android:text="ভূমি জরিপের বই সমূহ"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/bookimg"/>
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/bookimg"
+                        android:src="@drawable/book"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#004C7A"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grocName1"
+                        android:text="প্রশিক্ষিত আমিন "
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/surveyerimg"/>
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/surveyerimg"
+                        android:src="@drawable/surveyer"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
             android:id="@+id/row3"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
@@ -387,7 +478,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/grocName"
                         android:text="সরকারি সকল নোটিশ"
-                        android:textSize="15sp"
+                        android:textSize="14sp"
                         android:textColor="@color/white"
                         android:fontFamily="@font/poppins_semibold"
                         android:layout_marginTop="10dp"
@@ -398,7 +489,7 @@
                         android:layout_width="140dp"
                         android:layout_height="80dp"
                         android:id="@+id/govtImg"
-                        android:src="@drawable/govt"
+                        android:src="@drawable/bd_govt"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 

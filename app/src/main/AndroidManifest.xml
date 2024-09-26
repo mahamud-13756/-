@@ -13,6 +13,9 @@
         android:theme="@style/Theme.VumiJorip"
         tools:targetApi="31">
         <activity
+            android:name=".Fita_Calculator"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
